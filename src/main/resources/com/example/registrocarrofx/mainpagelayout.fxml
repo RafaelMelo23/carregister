@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="722.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrocarrofx.MainPageController">
+    <children>
+        <Button fx:id="databaseButton" layoutX="645.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modelsDatabaseButton" prefHeight="35.0" prefWidth="141.0" text="Registered Vehicles">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="registerModelButton" layoutX="572.0" layoutY="673.0" mnemonicParsing="false" onAction="#createCarProfile" prefHeight="35.0" prefWidth="214.0" text="Register Model">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <TextField fx:id="modelNameField" layoutX="14.0" layoutY="125.0" onKeyTyped="#modelNameTextField" prefHeight="25.0" prefWidth="150.0" promptText="Model name" />
+        <TextField fx:id="modelClassField" layoutX="14.0" layoutY="162.0" onKeyTyped="#modelClassTextField" promptText="Model class" />
+        <TextField fx:id="yearField" layoutX="15.0" layoutY="198.0" onKeyTyped="#yearTextField" promptText="Model Year" />
+        <TextField fx:id="transmissionField" layoutX="15.0" layoutY="268.0" onKeyTyped="#transmissionTextField" prefHeight="25.0" prefWidth="150.0" promptText="Transmission" />
+        <TextField fx:id="colorOptionsField" layoutX="15.0" layoutY="336.0" onKeyTyped="#colorOptionsTextField" prefHeight="25.0" prefWidth="255.0" promptText="Color options" />
+        <TextField fx:id="optionalsField" alignment="TOP_LEFT" layoutX="14.0" layoutY="371.0" onKeyTyped="#optionalsTextField" prefHeight="35.0" prefWidth="255.0" promptText="Optionals:">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+        <Label layoutX="13.0" layoutY="61.0" prefHeight="20.0" prefWidth="141.0" text="Trim Level (Select first)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="engineHpField" layoutX="14.0" layoutY="235.0" onKeyTyped="#engineHpTextField" prefHeight="25.0" prefWidth="150.0" promptText="Engine Horsepower" />
+        <ChoiceBox fx:id="engineFuelChoiceBox" layoutX="178.0" layoutY="83.0" onMouseClicked="#engineFuelSelector" prefWidth="150.0" />
+        <ChoiceBox fx:id="trimChoiceBox" layoutX="13.0" layoutY="81.0" onMouseClicked="#trimSelector" prefWidth="150.0" />
+        <Label layoutX="178.0" layoutY="62.0" prefHeight="20.0" prefWidth="77.0" text="Engine Fuel">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Text layoutX="18.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register new model" wrappingWidth="140.958984375">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="powertrainChoiceBox" layoutX="178.0" layoutY="189.0" onMouseClicked="#powertrainSelector" prefHeight="25.0" prefWidth="150.0" />
+        <Label layoutX="178.0" layoutY="168.0" prefHeight="21.0" prefWidth="77.0" text="Powertrain">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <ChoiceBox fx:id="engineLitreChoiceBox" layoutX="178.0" layoutY="134.0" onMouseClicked="#engineLitreSelector" prefWidth="150.0" />
+        <Label layoutX="178.0" layoutY="111.0" prefHeight="21.0" prefWidth="77.0" text="Engine Litre">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Button fx:id="trimRegisterButton" layoutX="286.0" layoutY="371.0" mnemonicParsing="false" onAction="#registerTrimButton" prefHeight="35.0" prefWidth="129.0" text="Register trim">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="trimMessageLabel" layoutX="286.0" layoutY="409.0" prefHeight="19.0" prefWidth="181.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="226.0" prefHeight="21.0" prefWidth="110.0" text="Engine Cylinders">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="engineCylindersChoiceBox" layoutX="178.0" layoutY="249.0" onMouseClicked="#engineCylindersSelector" prefHeight="25.0" prefWidth="150.0" />
+      <Label fx:id="optionalsLabelMessage" layoutX="13.0" layoutY="406.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionalsCountLabel" alignment="TOP_LEFT" layoutX="15.0" layoutY="434.0" prefHeight="288.0" prefWidth="150.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="304.0" prefHeight="20.0" prefWidth="374.0" text="Press ENTER to save the individual COLOR and or the OPTIONAL">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="colorsCountLabel" alignment="TOP_LEFT" layoutX="165.0" layoutY="434.0" prefHeight="288.0" prefWidth="150.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

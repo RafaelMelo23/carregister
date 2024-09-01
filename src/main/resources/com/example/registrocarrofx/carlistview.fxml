@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrocarrofx.CarListViewController">
+   <children>
+      <Button fx:id="carlistBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homepageButton" prefHeight="24.0" prefWidth="73.0" text="Back" />
+      <Label layoutX="567.0" layoutY="13.0" prefHeight="28.0" prefWidth="147.0" text="Vehicle Database" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="14.0" layoutY="80.0" />
+      <VBox fx:id="rootVBox" layoutX="14.0" layoutY="150.0" prefHeight="800.0" prefWidth="1250.0" />
+   </children>
+</AnchorPane>
