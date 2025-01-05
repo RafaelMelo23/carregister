@@ -1,10 +1,10 @@
 ## 🌟 Car Register
-=
+---
 
 Car Register is a Java desktop application designed to register car models and their respective details. The information entered by the user is stored in a MySQL database and can be easily displayed within the application.
 
 ## 🛠️ Built With
-=
+---
 * Java: The core language used for development.  
 * JavaFX: For the graphical user interface (GUI), including the use of Scene Builder.
 * Gson: To handle JSON parsing and serialization.
