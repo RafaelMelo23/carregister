@@ -1,26 +1,27 @@
-# Car Register
+## 🌟 Car Register
+=
 
-Java desktop application, that registers car models and their respective informations, that get stored in a database and displayed in the application.
+Car Register is a Java desktop application designed to register car models and their respective details. The information entered by the user is stored in a MySQL database and can be easily displayed within the application.
 
+## 🛠️ Built With
+=
+* Java: The core language used for development.  
+* JavaFX: For the graphical user interface (GUI), including the use of Scene Builder.
+* Gson: To handle JSON parsing and serialization.
+* ConnectorJ: MySQL Connector for connecting the application to the database.
+* MySQL Database: Used for storing car models and related data.
 
+## 🚗 Features
+---
+🖱️ Interactive Input: Supports both mouse and keyboard events for a smooth user experience.
 
-## Built With
+⚡ Lightweight: The application is compact, with a file size of just 276 KB.
 
-  - Java;
-  - JavaFX Library (as well as Scene Builder);
-  - Gson dependency;
-  - ConnectorJ dependency;
-  - mySQL Database.
+🗄️ Database Integration: Car models and their details are saved directly to the MySQL database.
 
-## Features
+🖥️ User-friendly Interface: Clean, easy-to-navigate design built using JavaFX.
 
-  - Supports mouse and keyboard events;
-  - Lightweight (276 KB);
-  - Fields get registered in the database;
+## 🙌 Acknowledgments
+---
 
-## Acknowledgments
-
-  - Although the project is ready to use, it lacks some functionality that would be required if it ever got used professionally.
-  - Being my first project, it may lack some expertise in the code that a plain dev would have.
-  - Just a "display" project, you can feel free to clone it.
-    
+This was my first project, thus, its really simple, the feature is pretty much just a CRUD and the GUI, showing the saved vehicle profiles was the hardest part for me back then, but it was valuable to me as a student and i'm still proud of this little project, and how im gonna reflect on it a great time from now
